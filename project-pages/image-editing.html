@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editing Project</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">About</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Content -->
+    <section class="image-editing">
+        <h1 class="hidden animate-on-load" data-animation="animate-fadeIn">Image Editing</h1>
+
+        <h2 class="hidden animate-on-load" data-animation="animate-backInUp">Book Cover - The Lion, The Witch and The Wardrobe</h2>
+        <img src="../image-resources/book_cover.png" style="width: 500px; padding: 20px;" class="hidden center animate-backInUp">
+        <p class="hidden animate-on-load" data-animation="animate-fadeIn">I chose to recreate the book cover for The Lion, The Witch, and The Wardrobe by C.S. Lewis, a story that revolves around the battle between good and evil. The main characters representing this conflict are the lion, Aslan, and the White Witch, so I decided to make them the focal points of my cover design. To emphasize their roles, I chose orange hues for the lion to represent warmth and good, while using blue tones for the witch, representing her association with ice and cold.</p>
+
+        <br>
+
+        <h2 class="hidden animate-on-load" data-animation="animate-backInUp">Logo - Pup Cup</h2>
+        <img src="../image-resources/pup_cup.png" style="width: 400px; padding: 20px;" class="hidden center animate-backInUp">
+        <p class="hidden animate-on-load" data-animation="animate-fadeIn">I decided to design a logo for a fictitious pet cafe called "Pup Cup." I wanted the logo to be simple yet playful, to reflect the fun and cozy atmosphere of the cafe. My goal was to avoid making the logo visually busy, while still giving it a sense of warmth and inviting charm. I’m really pleased with how the logo turned out. The combination of simple shapes, minimalist font, and warm colors gives it a clean and modern look, while still retaining the playful and friendly spirit that fits a pet-themed cafe. The design isn't overly complex, but the integration of the cup into the puppy's smile adds a fun, witty touch that ties the theme together nicely.</p>
+    </section>
+
+    <script>
+        // Run when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-on-load');
+            elements.forEach(el => {
+                el.classList.remove('hidden');
+                el.classList.add(el.dataset.animation);
+            });
+        });
+    </script>
+
+</body>
+</html>
