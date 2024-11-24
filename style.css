@@ -182,6 +182,12 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
+.image-editing h3 {
+    margin-top: 30px;
+    font-size: 1.1rem; /* Large heading */
+    width: clamp(0px, 95vw, 1200px);
+}
+
 .image-editing p {
     font-size: 1.1rem; /* Slightly larger font for paragraph */
     margin-top: 20px;
