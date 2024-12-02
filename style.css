@@ -172,7 +172,7 @@ nav ul li a:hover {
 
 .image-editing h1 {
     font-size: 3rem; /* Large heading */
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     padding-top: 20px;
 }
 
@@ -185,18 +185,28 @@ nav ul li a:hover {
 .image-editing h3 {
     margin-top: 30px;
     font-size: 1.1rem; /* Large heading */
-    width: clamp(0px, 95vw, 1200px);
+    /* width: clamp(0px, 95vw, 1200px); */
 }
 
 .image-editing p {
     font-size: 1.1rem; /* Slightly larger font for paragraph */
-    margin-top: 20px;
-    width: clamp(0px, 95vw, 1200px);
+    /* width: clamp(0px, 95vw, 1200px); */
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     line-height: 1.5;
+    padding-bottom: 20px;
 }
+
+.image-editing ul {
+    margin: 5px;
+    text-align: left;
+}
+
+.image-editing li {
+padding-bottom: 5px;
+}
+
 
 .image-editing iframe {
     margin-left: auto;
@@ -307,4 +317,27 @@ nav ul li a:hover {
     width: 30px; /* Icon size */
     height: auto;
     margin-right: 10px; /* Space between icon and text */
+}
+
+
+.image-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: #1D1D1D;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #1D1D1D;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.footer a{
+    color: #b2b2b2;
 }
